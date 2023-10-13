@@ -23,7 +23,7 @@ function Footer() {
           <h2 className="text-2xl text-yellow-300 underline pb-8">Our menu</h2>
             <ul className="flex flex-col items-start gap-5 font-semibold text-white uppercase">
               {navlink.map((i) => (
-                <Link href={i.link}>
+                <Link key={i.titel} href={i.link}>
                   <li
                     key={i.titel}
                     className=" text-md hover:text-gray-300 cursor-pointer duration-300 relative group overflow-hidden"
