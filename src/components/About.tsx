@@ -8,6 +8,7 @@ function About() {
         <p className='mb-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum aliquid odio sequi soluta? Laboriosam ducimus quidem aut eius saepe. Eaque earum impedit ullam quibusdam reiciendis itaque minima ipsum. Animi vitae quae.</p>
         <p>minima odit aperiam ratione magni dicta praesentium accusantium sapiente ipsam dolorum vel deleniti corporis voluptate quidem eum, sed consequuntur expedita, beatae reprehenderit, dolorem molestiae sint! Aliquam ipsam maxime inventore nostrum numquam natus non distinctio ut minus in illo, autem accusantium, quae facilis hic odit minima exercitationem placeat recusandae omnis.</p>
       </div>
+      <hr />
     </main>
   )
 }
