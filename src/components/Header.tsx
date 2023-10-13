@@ -34,10 +34,10 @@ function Header() {
             ))}
           </ul>
           {/* smole device menu icon */}
+
           <div className="inline-block md:hidden"
           onClick={()=>(setShow(!show))}>
               <span  className="text-2xl">
-              
                 {
                   show ? <AiOutlineClose/> : <AiOutlineMenu/>
                 }
@@ -45,11 +45,11 @@ function Header() {
           </div>
           {
             show && (
-              <ul className="flex flex-col relative top-40 py-5 px-5 bg-black gap-5 font-semibold text-gray-300 uppercase">
+              <ul className="flex flex-col relative right-0 top-40 py-5 px-5 bg-black gap-5 font-semibold text-gray-300 uppercase">
             {navlink.map((i) => (
               <Link key={i.titel} href={i.link}>
                 <li
-                  className=" text-md hover:text-white cursor-pointer duration-300 relative group overflow-hidden"
+                  className="absolute relative text-md hover:text-white cursor-pointer duration-300 group overflow-hidden"
                 >
                   {i.titel}
                   <span className="h-[1px] w-full bg-white inline-flex absolute -translate-x-[100%] left-0 bottom-0 group-hover:translate-x-0 duration-200 "></span>
