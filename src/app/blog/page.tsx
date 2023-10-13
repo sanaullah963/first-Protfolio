@@ -1,8 +1,13 @@
+import About from '@/components/About'
+import Banner from '@/components/Banner'
 import React from 'react'
 
 function page() {
   return (
-    <div>blog main page</div>
+    <main className='max-w-screen-xl px-4 mx-auto'>
+      <Banner/>
+      <About/>
+    </main>
   )
 }
 

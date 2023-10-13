@@ -1,8 +1,11 @@
+import Services from '@/components/Services'
 import React from 'react'
 
 function page() {
   return (
-    <div>services main page</div>
+    <main className='max-w-screen-xl px-4 mx-auto'>
+      <Services/>
+    </main>
   )
 }
 

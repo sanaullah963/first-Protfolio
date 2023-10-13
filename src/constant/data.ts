@@ -17,7 +17,8 @@ export const navlink = [
 },
 {
   titel : 'resume',
-  link : '/resume'
+  link : '/resume.pdf',
+  target : '_blank'
 },
 {
   titel : 'contact',
