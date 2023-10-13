@@ -18,9 +18,8 @@ function Header() {
           {/* navbar item */}
           <ul className="flex gap-5 font-semibold text-gray-700 uppercase">
             {navlink.map((i) => (
-              <Link href={i.link}>
+              <Link key={i.titel} href={i.link}>
                 <li
-                  key={i.titel}
                   className=" text-md hover:text-black cursor-pointer duration-300 relative group overflow-hidden"
                 >
                   {i.titel}
