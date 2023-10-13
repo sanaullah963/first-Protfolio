@@ -4,10 +4,10 @@ import Image from 'next/image'
 import React from "react";
 function Banner() {
   return (
-    <main>
-      <div className='grid grid-cols-2 gap-5 max-w-screen-xl m-auto mx-4 my-20'>
+    <main className=''>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-5 max-w-screen-xl mx-auto mx-4 my-20'>
         {/* banner left */}
-        <div className='my-auto'>
+        <div className='my-auto px-4'>
           <h1 className='text-2xl font-bold'>BPI MERN</h1>
           <h2 className='text-lg  mb-2'>MERN Stack Developer</h2>
           <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ex nobis impedit quibusdam similique est beatae nostrum, totam esse libero ea, obcaecati inventore molestias repellat reiciendis tempora facilis unde veniam?</p>
