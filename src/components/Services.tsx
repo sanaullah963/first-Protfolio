@@ -1,10 +1,17 @@
+'use client'
 import React from 'react'
-import { BsCodeSlash } from "react-icons/bs";
 import {services} from '@/constant/data'
+import {motion} from 'framer-motion'
 function Services() {
   return (
     <main className='my-20'>
-      <div className=''>
+      <motion.div
+      initial={{y:100,opacity:0}}
+      whileInView={{y:0,opacity:1}}
+      transition={{duration:0.5}}
+      viewport={{once:true}}
+
+      className=''>
         <h1 className='text-2xl mb-10'>My Servicer</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {
@@ -19,7 +26,7 @@ function Services() {
             ))
           }
         </div>
-      </div>
+      </motion.div>
      
     </main>
   )

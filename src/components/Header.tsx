@@ -6,6 +6,7 @@ import { navlink } from "@/constant/data";
 import Link from "next/link";
 import { AiOutlineMenu,AiOutlineClose } from "react-icons/ai";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 function Header() {
   const [show , setShow]=useState(false);
@@ -14,7 +15,7 @@ function Header() {
   
   return (
     <main className="sticky top-0 z-10">
-      <nav className="w-full h-16 bg-backgroundColor">
+      <nav className="w-full h-16 bg-backgroundColor relative">
         <div className="h-full max-w-screen-xl mx-auto px-4 flex items-center justify-between">
           {/* navbar logo */}
           <div>
@@ -47,7 +48,11 @@ function Header() {
           </div>
           {
             show && (
-              <ul className="flex flex-col relative right-0 top-40 py-5 px-5 bg-black gap-5 font-semibold text-gray-300 uppercase">
+              <motion.ul 
+              initial={{x:40,opacity:0}}
+              animate={{x:0,opacity:1}}
+              transition={{duration:.5}}
+              className="flex flex-col absolute right-0 top-16 py-5 px-5 bg-black gap-5 font-semibold text-gray-300 uppercase">
             {navlink.map((i) => (
               <Link key={i.titel} href={i.link}>
                 <li
@@ -58,7 +63,7 @@ function Header() {
                 </li>
               </Link>
             ))}
-          </ul>
+          </motion.ul>
             )
           }
         </div>

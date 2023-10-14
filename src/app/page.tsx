@@ -11,6 +11,7 @@ export default function Home() {
       <div className='max-w-screen-xl px-4 mx-auto'>
         <About/>
         <Services/>
+        <hr />
         <Protfolio/>
       </div>
     </main>
