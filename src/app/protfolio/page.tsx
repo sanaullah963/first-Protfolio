@@ -1,8 +1,11 @@
+import Protfolio from '@/components/Protfolio'
 import React from 'react'
 
 function page() {
   return (
-    <div>protfolio main page</div>
+    <main className='max-w-screen-xl px-4 mx-auto'>
+      <Protfolio/>
+    </main>
   )
 }
 
