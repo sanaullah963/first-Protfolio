@@ -1,14 +1,20 @@
-
+'use client'
 import React from "react";
 import Logo from "@/img/logowhite.png";
 import Image from "next/image";
 import Link from "next/link";
 import {BsFacebook,BsYoutube,BsLinkedin,BsTwitter,BsInstagram} from 'react-icons/bs'
 import { navlink,footersupert } from "@/constant/data";
+import {motion} from 'framer-motion'
 function Footer() {
   return (
     <main>
-      <div className="w-full bg-zinc-900 text-white">
+      <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="w-full bg-zinc-900 text-white">
         <div className="w-full py-10 px-6 max-w-screen-xl mx-auto grid gap-10 grid-cols-1 md:grid-cols-3  lg:grid-cols-4 ">
           {/* footer 1st section */}
           <div className="my-auto">
@@ -63,7 +69,7 @@ function Footer() {
             
           </div>
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 }
